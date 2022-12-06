@@ -66,11 +66,11 @@ with open('input.txt', 'r') as f:
 
         ## Part Two
 
-        if second_min <= first_max and second_max > first_max:
+        if second_min <= first_max < second_max:
             count += 1
             continue
 
-        if first_min <= second_max and first_max > second_max:
+        if first_min <= second_max < first_max:
             count += 1
             continue
     print(count)

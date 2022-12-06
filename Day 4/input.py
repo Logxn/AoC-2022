@@ -16,7 +16,7 @@ with open('input.txt', 'r') as f:
         second_min = int(second_range.split('-')[0])
         second_max = int(second_range.split('-')[1])
 
-        ## Succeedings
+        # Succeedings
         if first_min == first_max and (first_min <= second_max and first_max >= second_min):
             count += 1
             continue
@@ -47,7 +47,7 @@ with open('input.txt', 'r') as f:
         second_min = int(second_range.split('-')[0])
         second_max = int(second_range.split('-')[1])
 
-        ## Succeedings
+        # Succeedings
         if first_min == first_max and (first_min <= second_max and first_max >= second_min):
             count += 1
             continue
@@ -64,7 +64,7 @@ with open('input.txt', 'r') as f:
             count += 1
             continue
 
-        ## Part Two
+        # Part Two
 
         if second_min <= first_max < second_max:
             count += 1

@@ -9,7 +9,7 @@ with open('input.txt', 'r') as file:
         if len(possible_marker) == len(set(possible_marker)):
             print(f'Possible unique marker: {possible_marker}')
             starting_pos = line.find(possible_marker)
-            end_pos = starting_pos + 3 # 3 remaining characters of the 4 char marker + index fixing
+            end_pos = starting_pos + 3  # 3 remaining characters of the 4 char marker + index fixing
             print(f'Possible ending position: {end_pos}')
             break
 

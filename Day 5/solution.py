@@ -23,9 +23,6 @@ with open('input.txt', 'r') as f:
         int_to_move = int(numbers[1])
         int_to_receive = int(numbers[2])
 
-        stack_to_move = []
-        stack_to_receive = []
-
         match int_to_move:
             case 1:
                 stack_to_move = stack_one
@@ -79,4 +76,6 @@ with open('input.txt', 'r') as f:
         for item in popped:
             stack_to_receive.append(item)
 
-    print(''.join(stack_one[-1] + stack_two[-1] + stack_three[-1] + stack_four[-1] + stack_five[-1] + stack_six[-1] + stack_seven[-1] + stack_eight[-1] + stack_nine[-1]))
+    print(''.join("{0}{1}{2}{3}{4}{5}{6}{7}{8}".format(stack_one[-1], stack_two[-1], stack_three[-1], stack_four[-1],
+                                                       stack_five[-1], stack_six[-1], stack_seven[-1], stack_eight[-1],
+                                                       stack_nine[-1])))
